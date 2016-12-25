@@ -1,0 +1,305 @@
+﻿body {
+    background-color: #f4f4f4;
+}
+
+
+.wrapper {
+    width: 1280px;
+    height: auto;
+    margin: 0 auto;
+}
+
+header ul.navigation-top {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #fff;
+    font-family: Arial, Helvetica, sans-serif;
+    border: 1px solid #eee;
+    float: left;
+    width: 100%;
+    display: table;
+    position: relative;
+}
+
+    header ul.navigation-top .nav-vid {
+        background: #003366;
+    }
+
+    header ul.navigation-top .nav-gal {
+        background: #990000;
+    }
+
+    header ul.navigation-top .nav-search {
+        background: #eee;
+        float: right;
+        background: url(img/search.gif) no-repeat;
+        width: 47px;
+    }
+
+    header ul.navigation-top li.nav-gal a:hover, header ul.navigation-top li.nav-vid a:hover {
+        color: #fff;
+    }
+
+    header ul.navigation-top li {
+        float: left;
+        height: 38px;
+        display: inline-block;
+        position: relative;
+    }
+
+
+        header ul.navigation-top li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 10px 17px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+            header ul.navigation-top li a:hover {
+                color: #1965aa;
+            }
+
+.header-top {
+    background: #000;
+    height: 70px;
+    width: 100%;
+}
+
+.header-row {
+    width: 100%;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+header .navigation-weather {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 30px;
+    width: 350px;
+    float: right;
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+    header .navigation-weather li {
+        float: left;
+        width: auto;
+        height: 30px;
+        color: #fff;
+        margin: 2px 5px;
+        padding: 6px 2px;
+    }
+
+        header .navigation-weather li.w-icon {
+            margin-top: -1px;
+        }
+
+        header .navigation-weather li.w-date {
+            color: #a6a6a6;
+            font-size: 13px;
+        }
+
+        header .navigation-weather li.w-weather {
+            color: #a6a6a6;
+            font-size: 13px;
+            margin-top: -1px;
+        }
+
+        header .navigation-weather li.w-degree {
+            color: #a6a6a6;
+            font-size: 13px;
+        }
+
+        header .navigation-weather li.w-city {
+            font-size: 13px;
+        }
+
+
+header .navigation-social {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    height: 40px;
+    width: 255px;
+    list-style-type: none;
+    float: right;
+}
+
+    header .navigation-social li {
+        float: left;
+        width: 50px;
+        height: 40px;
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+
+        header .navigation-social li:hover {
+            -webkit-filter: grayscale(0%);
+            filter: grayscale(0%);
+            cursor: pointer;
+        }
+
+        header .navigation-social li a {
+            display: block;
+            color: #000;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        header .navigation-social li.facebook {
+            background: url('img/sprite_so.gif') 165px 0;
+        }
+
+        header .navigation-social li.twitter {
+            background: url('img/sprite_so.gif') 7px 0;
+        }
+
+        header .navigation-social li.youtube {
+            background: url('img/sprite_so.gif') 227px 0;
+        }
+
+        header .navigation-social li.rss {
+            background: url('img/sprite_so.gif') 45px 0;
+        }
+
+        header .navigation-social li.google {
+            background: url('img/sprite_so.gif') 105px 0;
+        }
+
+
+
+
+@media screen and (max-width: 1280px) {
+    .wrapper {
+        width: 100%;
+    }
+
+    header .navigation-weather {
+        float: left;
+    }
+
+    .header-row {
+        width: 50%;
+    }
+
+    .header-top {
+        height: 40px;
+    }
+
+    header ul.navigation-top li.right,
+    header ul.navigation-top li {
+        width: 22%;
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    header ul.navigation-top .nav-search {
+        background: url(img/search.gif) no-repeat center center;
+        width: 100%;
+    }
+}
+
+
+input[type='checkbox']#hiddenInput {
+    display: none;
+}
+
+.show-mobile-nav {
+    display: none;
+    color: white;
+    font-size: 30px;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    padding: 8px 15px 10px 15px;
+    background-color: #2196F3;
+    border-radius: 100%;
+    z-index: 1;
+    border: 1px solid #212121;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width: 680px) {
+    header ul.navigation-top .nav-search {
+        width: 100%;
+        background: url(img/search.gif) no-repeat center center;
+    }
+
+    header .navigation-weather {
+        float: none;
+        margin: 0 auto;
+    }
+
+    header .navigation-social {
+        float: none;
+        margin: -15px auto 0px auto;
+    }
+
+    .header-row {
+        width: 100%;
+    }
+
+    .header-top {
+        height: 70px;
+    }
+
+    header ul.navigation-top li.right,
+    header ul.navigation-top li {
+        width: 100%;
+        font-size: 12px;
+        padding: 5px 5px;
+    }
+
+    header ul.navigation-top {
+        display: none;
+    }
+
+    input[type='checkbox']#hiddenInput:checked ~ ul.navigation-top, .show-mobile-nav {
+        display: block;
+    }
+
+    ul.navigation-top li {
+        display: block;
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid rgba(1,1,1,.1);
+    }
+
+        ul.navigation-top li:hover {
+            box-shadow: 0 0 0;
+        }
+
+        ul.navigation-top li ul {
+            display: block;
+            background-color: white;
+            margin: 15px 0 -15px 0;
+        }
+
+            ul.navigation-top li ul li {
+                font-size: 80%;
+                padding: 10px;
+            }
+
+        ul.navigation-top li:hover ul {
+            width: 100%;
+            position: relative;
+        }
+}
+
+@media screen and (max-width: 510px) {
+
+    .show-mobile-nav {
+        top: 35px;
+        font-size: 20px;
+        padding: 2px 8px 4px 8px;
+    }
+}
